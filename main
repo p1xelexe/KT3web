@@ -1,0 +1,43 @@
+pip install selenium
+
+# Пример класса PageObject для главной страницы
+class MainPage:
+    def __init__(self, driver):
+        self.driver = driver
+        self.search_box = driver.find_element_by_name('search')
+
+
+ #add 5 test 
+def test_add_to_wishlist():
+    main_page = MainPage(driver)
+    # Добавление товара 
+
+
+def test_add_camera():
+    product_page = ProductPage(driver)
+
+   
+
+def test_add_tablet():
+    product_page = ProductPage(driver)
+  
+ 
+
+def test_add_htc_phone():
+    product_page = ProductPage(driver)
+    # Добавление телефона HTC в корзину
+   
+
+def test_write_review():
+    product_page = ProductPage(driver)
+    # Написать отзыв на выбранный товар
+
+from selenium.webdriver import Chrome, Firefox
+
+# Инициализация драйвера Chrome
+driver_chrome = Chrome()
+
+# Вызов тестов используя драйвер Chrome
+
+# Завершаем работу драйвера Chrome
+driver_chrome.quit()
